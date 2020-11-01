@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+  <style>
+      #ladder-result > div .ladder{
+        display: inline-block;
+        box-sizing: content-box;
+        width: 100px;
+        height: 50px;
+      }
+      #ladder-result > div .ladder.name{
+          border-radius: 5px;
+          border:2px solid grey;
+          margin:10px 25px;
+          margin-left: -25px;
+      }
+      #ladder-result > div .ladder div{
+        width: 50px;
+        height: 50px;
+      }
+      #ladder-result > div .vertical{
+        height: 55px;
+        margin-left: -2px;
+        width:2px;
+        margin-top: 3px;
+        border-right: 5px solid magenta
+      }
+      .row{
+        margin-top: -9px;
+      }
+      #ladder-result > div .horizontal{
+        transform: rotate(4deg)scaleX(1.05);
+        width: 102px;
+        margin-right: -2px;
+        border-bottom: 5px solid magenta
+      }
+      #ladder-result > div .empty div{
+          border:none
+      }
+      #ladder-result{
+          margin-left:70px;
+      }
+      #ladder-result > div .active{
+          border-color:black
+      }
+  </style>
+  <script src="ladder.js"></script>
+  <script>
+  </script>
+ </head>
+ <body>
+	<div id="main">	
+		<h3>사다리 게임</h3>
+		참가할 인원: <input type="text" id="num"/><br>
+		<input type="button" id="ok" value="확인"/>
+	</div>	
+	<div id="settings">	
+		<div id="setting-table"></div>
+		<input type="button" id="start" value="사다리타기"/>
+	</div>
+	<div id="ladder-result">	
+		
+	</div>
+ </body>
+</html>
